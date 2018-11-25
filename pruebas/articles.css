@@ -1,0 +1,81 @@
+/* ------------------ BASICO ------------------ */
+header{
+    background-color: orange;
+    min-height: 200px;
+}
+#principal{
+    min-height: 500px;
+}
+
+nav{
+    background-color: red;
+}
+
+
+aside{
+    background-color: blue;
+}
+
+footer{
+    background-color: yellow;
+    min-height: 200px;
+}
+
+/* ------------------ fin BASICO ------------------ */
+
+
+main{
+    display: grid;
+    background-color: #C5CAE9;
+    min-height: 1000px;
+
+
+
+    /* grid-template-columns: 30% 20% 20% 30%; */
+    /* grid-template-columns: 30% 300px 20% 30%; */
+    /* grid-template-columns: 30% auto auto 30%; */
+    /* grid-template-columns: 30% repeat(2, 20%) 30%; */
+    /* grid-template-columns: 30% 300px auto 30%; */
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+
+
+
+
+    /* grid-template-rows: 300px 200px 150px 500px; */
+    /* grid-template-rows: 300px auto 150px 500px; */
+    /* grid-template-rows: 300px repeat(3, auto); */
+    grid-template-rows: 300px auto 300px, auto;
+
+
+    /* Para separar cajas entre sí */
+    grid-gap: 10px 50px;
+
+    /* grid-row-gap: 10px;
+    grid-column-gap: 20px; */
+
+
+
+
+}
+
+article{
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
