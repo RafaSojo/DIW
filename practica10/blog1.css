@@ -1,0 +1,54 @@
+body{
+    min-height: 95vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10vh 7vh auto 10vh;
+    grid-template-areas: 
+      "header header header header"
+      "nav nav nav nav"
+      "main main main aside"
+      "footer footer footer footer";}
+
+header{
+    background-color: aqua;
+    grid-area: header;
+}
+
+nav{
+    background-color: goldenrod;
+    grid-area: nav;
+}
+
+main{
+    background-color: yellow;
+    grid-area: main;
+}
+
+aside{
+    background-color: chartreuse;
+    grid-area: aside;
+}
+
+footer{
+    background-color: hotpink;
+    grid-area: footer;
+}
+
+
+
+/* --------------- Diseño Menú ---------------*/
+nav>ul{
+    list-style: none;
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+nav>ul>li{
+    display: inline-block;
+}
+
+
+
+
+/* --------------- Fin Diseño Menú ---------------*/
+
