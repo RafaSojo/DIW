@@ -1,8 +1,11 @@
 body{
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0;
     min-height: 95vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 10vh 7vh auto 10vh;
+    grid-template-rows: 10vh auto auto 10vh;
     grid-template-areas: 
       "header header header header"
       "nav nav nav nav"
@@ -12,6 +15,11 @@ body{
 header{
     background-color: aqua;
     grid-area: header;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 nav{
@@ -34,21 +42,38 @@ footer{
     grid-area: footer;
 }
 
+article{
+    border: 1px solid black;
+}
+
 
 
 /* --------------- Diseño Menú ---------------*/
 nav>ul{
     list-style: none;
     text-decoration: none;
-    /* display: inline-block; */
 }
 
 nav>ul>li{
     display: inline-block;
 }
 
+nav>ul>li>a{
+    text-decoration: none;
+}
 
 
+nav>ul>li>a>span{
+    padding: 2vh 4vw;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: #1976D2;
+    color: white;
+}
+
+nav>ul>li>a>span:hover{
+    background-color: #FF5722;
+}
 
 /* --------------- Fin Diseño Menú ---------------*/
 
