@@ -77,3 +77,10 @@ nav>ul>li>a>span:hover{
 
 /* --------------- Fin Diseño Menú ---------------*/
 
+
+/*--------------- Diseño aside ---------------*/
+aside>section{
+    border-bottom: 1px solid black;
+}
+
+/*--------------- Fin Diseño aside ---------------*/
