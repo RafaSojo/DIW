@@ -1,6 +1,8 @@
 body{
     display: flex;
     flex-direction: column;
+    margin: 0;
+
 }
 
 header{
@@ -26,6 +28,9 @@ main{
     display: flex;
 flex-flow: row wrap;
 justify-content:space-between;
+
+min-height: 60vh;
+
 
 }
 

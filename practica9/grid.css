@@ -144,3 +144,13 @@ footer>h2 {
 .derecha>ul>li>span {
     display: block;
 }
+
+.publicidad{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.publicidad>div{
+    border: 1px solid black;
+}
