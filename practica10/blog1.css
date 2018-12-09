@@ -10,7 +10,8 @@ body{
       "header header header header"
       "nav nav nav nav"
       "main main main aside"
-      "footer footer footer footer";}
+      "footer footer footer footer";
+    }
 
 header{
     background-color: aqua;
@@ -44,6 +45,49 @@ footer{
 
 article{
     border: 1px solid black;
+    margin: 10px;
+    padding: 10px 30px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10vh auto auto 5vh;
+    grid-template-areas: 
+      "titulo titulo titulo titulo"
+      "imagen contenido contenido contenido"
+      "imagen contenido contenido contenido"
+      "a a a leerMas";
+    /* display: flex; */
+}
+
+article>h2{
+    grid-area: titulo;
+}
+
+.contenido{
+    grid-area: contenido;
+    margin-left: 15px;
+    text-align: justify;
+}
+
+article>img{
+    grid-area: imagen;
+    width: 100%;
+}
+
+.leer-mas{
+    text-align: right;
+    grid-area: leerMas;
+}
+.leer-mas>a{
+    color: #fff;
+    background-color: #710000;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.leer-mas>a:hover{
+    background-color: #d10000;
 }
 
 
