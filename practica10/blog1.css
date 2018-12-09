@@ -5,7 +5,7 @@ body{
     min-height: 95vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 10vh auto auto 10vh;
+    grid-template-rows: 10vh auto auto auto;
     grid-template-areas: 
       "header header header header"
       "nav nav nav nav"
@@ -38,10 +38,8 @@ aside{
     grid-area: aside;
 }
 
-footer{
-    background-color: hotpink;
-    grid-area: footer;
-}
+
+/* ----------------- Diseño artículo ----------------- */
 
 article{
     border: 1px solid black;
@@ -89,6 +87,7 @@ article>img{
 .leer-mas>a:hover{
     background-color: #d10000;
 }
+/* ----------------- FIN Diseño artículo ----------------- */
 
 
 
@@ -128,3 +127,29 @@ aside>section{
 }
 
 /*--------------- Fin Diseño aside ---------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ Diseño Footer ---------------- */
+
+footer{
+    background-color: hotpink;
+    grid-area: footer;
+}
+
+
+
+
+
+
+/* ---------------- Fin diseño footer ------------------- */
+
