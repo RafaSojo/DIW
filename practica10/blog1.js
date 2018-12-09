@@ -12,6 +12,7 @@ function init() {
     let contexto = cargaContextoCanvas('logoAndroid');
     if (contexto) {
 
+        // Créditos -> http://www.cristalab.com/tutoriales/logo-de-android-con-canvas-en-html5-css3-y-js-c102973l/
         android  = contexto;
         android.fillStyle="#a5ca39";
         android.beginPath();
