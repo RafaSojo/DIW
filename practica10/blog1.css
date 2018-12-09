@@ -144,11 +144,27 @@ aside>section{
 footer{
     background-color: hotpink;
     grid-area: footer;
+    display: flex;
+}
+
+footer>section{
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+}
+
+.foto-perfil{
+    width: 8vw;
+    border-radius:160px;
+    border:2px solid #666;
 }
 
 
-
-
+.redesSociales>a{
+font-size: 3em;
+margin: 10px;
+color: #fff;
+}
 
 
 /* ---------------- Fin diseño footer ------------------- */
