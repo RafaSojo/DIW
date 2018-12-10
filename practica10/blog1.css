@@ -1,3 +1,11 @@
+/* Sombras material design https://codepen.io/sdthornton/pen/wBZdXq */
+
+/* Colores principales */
+:root {
+    --color-principal: #179bd7;
+    --color-secundario: #253b80;
+  }
+
 body{
     font-family: 'Roboto', sans-serif;
 
@@ -42,7 +50,7 @@ aside{
 /* ----------------- Diseño artículo ----------------- */
 
 article{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 10px;
     padding: 10px 30px;
 
@@ -53,9 +61,20 @@ article{
       "titulo titulo titulo titulo"
       "imagen contenido contenido contenido"
       "imagen contenido contenido contenido"
-      "a a a leerMas";
-    /* display: flex; */
+      "foo foo foo leerMas";
+    background: rgb(250, 250, 250);
+    border-radius: 2px;
+    margin: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
+
+
+  
+
+  article:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
 
 article>h2{
     grid-area: titulo;
@@ -77,16 +96,17 @@ article>img{
     grid-area: leerMas;
 }
 .leer-mas>a{
-    color: #fff;
-    background-color: #710000;
+    color: var(--color-principal);
+    background-color: #fff;
     padding: 10px;
-    border-radius: 5px;
+    border: 1px solid var(--color-principal);
+    border-radius: 15px;
     text-decoration: none;
 }
 
-.leer-mas>a:hover{
-    background-color: #d10000;
-}
+/* .leer-mas>a:hover{
+    background-color: var(--color-secundario);
+} */
 /* ----------------- FIN Diseño artículo ----------------- */
 
 
@@ -110,12 +130,12 @@ nav>ul>li>a>span{
     padding: 2vh 4vw;
     display: inline-block;
     border-radius: 8px;
-    background-color: #1976D2;
+    background-color: var(--color-principal);
     color: white;
 }
 
 nav>ul>li>a>span:hover{
-    background-color: #FF5722;
+    background-color: var(--color-secundario);
 }
 
 /* --------------- Fin Diseño Menú ---------------*/
@@ -123,7 +143,11 @@ nav>ul>li>a>span:hover{
 
 /*--------------- Diseño aside ---------------*/
 aside>section{
-    border-bottom: 1px solid black;
+    background: #fff;
+    border-radius: 2px;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 /*--------------- Fin Diseño aside ---------------*/
@@ -163,12 +187,20 @@ footer>section{
 .redesSociales>a{
 font-size: 3em;
 margin: 10px;
-color: #253b80;
+color: var(--color-principal);
 }
 
 .redesSociales>a:hover{
-    color: #179bd7;
+    color: var(--color-secundario);
     }
 
 /* ---------------- Fin diseño footer ------------------- */
+
+
+
+
+
+
+
+
 
