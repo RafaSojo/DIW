@@ -14,7 +14,7 @@ body{
     }
 
 header{
-    background-color: aqua;
+    /* background-color: aqua; */
     grid-area: header;
 
     display: flex;
@@ -24,17 +24,17 @@ header{
 }
 
 nav{
-    background-color: goldenrod;
+    /* background-color: goldenrod; */
     grid-area: nav;
 }
 
 main{
-    background-color: yellow;
+    /* background-color: yellow; */
     grid-area: main;
 }
 
 aside{
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     grid-area: aside;
 }
 
@@ -142,7 +142,7 @@ aside>section{
 /* ------------------ Diseño Footer ---------------- */
 
 footer{
-    background-color: hotpink;
+    /* background-color: hotpink; */
     grid-area: footer;
     display: flex;
 }
@@ -163,9 +163,12 @@ footer>section{
 .redesSociales>a{
 font-size: 3em;
 margin: 10px;
-color: #fff;
+color: #253b80;
 }
 
+.redesSociales>a:hover{
+    color: #179bd7;
+    }
 
 /* ---------------- Fin diseño footer ------------------- */
 
