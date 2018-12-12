@@ -150,6 +150,26 @@ aside>section{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+aside>section>ul{
+    padding: 5px 30px;
+}
+aside>section>ul>li{
+    /* text-decoration-style: none; */
+    list-style: none;
+    /* margin-left: 0px; */
+    margin-top: 10px;
+}
+
+aside>section>ul>li>a{
+    text-decoration: none;
+    color: var(--color-principal);
+    display: block;
+}
+aside>section>ul>li>a:hover{
+    color: var(--color-secundario);
+    transform: scale(1.05);
+}
+
 /*--------------- Fin Diseño aside ---------------*/
 
 
