@@ -114,6 +114,7 @@ article>img {
 nav>ul {
     list-style: none;
     text-decoration: none;
+    background-color:var(--color-principal);
 }
 
 nav>ul>li {
@@ -128,13 +129,15 @@ nav>ul>li>a {
 nav>ul>li>a>span {
     padding: 2vh 4vw;
     display: inline-block;
-    border-radius: 8px;
-    background-color: var(--color-principal);
+    /* border-radius: 8px; */
+    background-color: #179bd7;
     color: white;
+    transition: background-color 0.3s ease-out;
+
 }
 
 nav>ul>li>a>span:hover {
-    background-color: var(--color-secundario);
+    background-color: #087aaf;
 }
 
 /* --------------- Fin Diseño Menú ---------------*/
