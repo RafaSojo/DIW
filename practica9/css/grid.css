@@ -1,0 +1,182 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15vh 6vh auto 25vh;
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "main main main aside"
+        "footer footer footer footer";
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+header {
+    grid-area: header;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+}
+
+header>h1{
+    font-size: 4em;
+}
+
+/* ------------------- ESTILO MENú --------------------------- */
+
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+
+}
+
+nav>ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+
+nav>ul>li {
+    display: inline-block;
+    border: 1px solid black;
+    margin: 15px 50px;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+}
+
+nav>ul>li>a>span {
+    padding: 1vh 3vw;
+    display: inline-block;
+    color: black;
+}
+
+/* ------------------- FIN ESTILO MENú --------------------------- */
+
+main {
+    grid-area: main;
+    border: 1px solid black;
+
+    /*Display para el contenido del main*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+main>article {
+    margin: 30px;
+    border: 1px solid black;
+
+}
+
+
+aside {
+    grid-area: aside;
+    border: 1px solid black;
+    display: grid;
+    grid-auto-flow: row;
+}
+
+aside>section {
+    border: 1px solid black;
+    margin: 15px;
+
+}
+
+
+footer {
+    grid-area: footer;
+
+    border: 1px solid black;
+}
+
+footer>h2 {
+    text-align: center;
+    font-size: 3em;
+    margin: auto;
+}
+
+.columnasFooter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+.izquierda {
+    font-size: 2.5em;
+    margin: auto;
+}
+
+.derecha>ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    text-align: center;
+}
+
+.derecha>ul>li {
+    display: inline-block;
+    margin: 15px 30px;
+}
+
+.derecha>ul>li>a {
+    text-decoration: none;
+}
+
+
+.icono {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.derecha>ul>li>span {
+    display: block;
+}
+
+.archivo>span{
+    display:inline-block;
+    width: 40%;
+    margin: 10px;
+}
+
+.publicidad{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    height: 100%;
+}
+
+.publicidad>div{
+    border: 1px solid black;
+    margin: 25px;
+}
+
+
+h3{
+    text-align: center;
+}
+
+
+.subtitulo{
+    margin-left: 20px;
+}
+
+article>p{
+    margin: 15px;
+}
+
+h4{
+    margin: 10px;
+}
