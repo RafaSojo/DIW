@@ -1,12 +1,10 @@
 body {
     display: inline-block;
-
     min-height: 100vh;
 }
 
-
-.wrapper-main-aside{
-display: inline-block;
+.wrapper-main-aside {
+    display: inline-block;
 }
 
 header {
@@ -17,7 +15,7 @@ header {
     border: 1px solid black;
 }
 
-header>h1{
+header>h1 {
     font-size: 4em;
 }
 
@@ -28,9 +26,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     border: 1px solid black;
-
 }
 
 nav>ul {
@@ -60,7 +56,6 @@ nav>ul>li>a>span {
 main {
     border: 1px solid black;
     width: 70%;
-
     /*Display para el contenido del main*/
     display: inline-block;
     /* grid-template-columns: repeat(3, 1fr); */
@@ -72,9 +67,7 @@ main>article {
     border: 1px solid black;
     display: inline-block;
     width: 20vw;
-
 }
-
 
 aside {
     border: 1px solid black;
@@ -88,9 +81,7 @@ aside {
 aside>section {
     border: 1px solid black;
     margin: 15px;
-
 }
-
 
 footer {
     border: 1px solid black;
@@ -129,7 +120,6 @@ footer>h2 {
     text-decoration: none;
 }
 
-
 .icono {
     font-size: 3em;
     margin-bottom: 10px;
@@ -139,38 +129,36 @@ footer>h2 {
     display: block;
 }
 
-.archivo>span{
-    display:inline-block;
+.archivo>span {
+    display: inline-block;
     width: 40%;
     margin: 10px;
 }
 
-.publicidad{
+.publicidad {
     display: grid;
     grid-template-columns: repeat(2, 150px);
     grid-template-rows: repeat(2, 150px);
     height: 100%;
 }
 
-.publicidad>div{
+.publicidad>div {
     border: 1px solid black;
     margin: 25px;
 }
 
-
-h3{
+h3 {
     text-align: center;
 }
 
-
-.subtitulo{
+.subtitulo {
     margin-left: 20px;
 }
 
-article>p{
+article>p {
     margin: 15px;
 }
 
-h4{
+h4 {
     margin: 10px;
 }
